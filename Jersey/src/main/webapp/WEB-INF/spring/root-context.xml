@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<!-- Root Context: defines shared resources visible to all other web components -->
+<!--     <import resource="hibernate-beans.xml"/>
+    <import resource="security.xml"/>
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:gars.property</value>
+				<value>classpath:hibernate.mysql.property</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataManager" class="edu.cse308.gars.service.DataManagerImpl"></bean>
+	<bean id="assignmentManager" class="edu.cse308.gars.service.AssignmentManagerImpl"></bean>
+	<bean id="applicationManager" class="edu.cse308.gars.service.ApplicationManagerImpl"></bean>
+	<bean id="userManager" class="edu.cse308.gars.service.UserManagerImpl"></bean>
+	 -->
+	<context:annotation-config /> 
+	<context:component-scan base-package="com.mengqi.jersey.resource"/>
+
+</beans>
